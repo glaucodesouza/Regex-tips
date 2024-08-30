@@ -55,3 +55,10 @@ results:
   '[', 'f'
 ]
 */
+
+let text2 = `1: !"#$%&\'()*+,-./ 2: :;<=>?@`; //this text2 is followinf ascii table
+console.log(text2.match(/[^!-/:-@\s]/g)); // Negate, interval 1 of ascii table (!-/), interval 2 of ascii table (:-@), spaces
+/*
+results:
+[ '1', '2' ]
+*/
