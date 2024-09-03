@@ -1,6 +1,6 @@
 /*
 When you want using:
-  Using quantifier, for identities
+  Using quantifier
 
 Use Extension Code Runner
 to test your code in VS Code terminal
