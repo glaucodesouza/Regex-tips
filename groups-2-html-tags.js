@@ -22,12 +22,10 @@ results:
 let text2 = `Lentamente é mente muito lenta.`;
 console.log(text2.match(/(lenta)(mente).*\2.*\1\./gi));
 
-// ?: não guarda o valor do grupo usado nele. 
-// Então \1 guardou apenas a segundo grupo (mente) como primeiro.
+// ?: não guarda o valor do grupo usado nele. Então \1 guardou apenas a segundo grupo (mente) como primeiro.
 console.log(text2.match(/(?:lenta)(mente).*\1/gi));
-
 console.log(text2.match(/(lenta)(mente)?/gi)); // (mente)? é um grupo com captura opcional
-
+console.log(text2.replace(/(lenta)(mente)/gi, '$2')); // REPLACE: lentamente por mente: result: mente é mente muito lenta.
 
 /*
 explaining regex:
@@ -44,6 +42,7 @@ results:
   [ 'Lentamente é mente muito lenta.' ]
   [ 'Lentamente é mente' ]
   [ 'Lentamente', 'lenta' ]
+  mente é mente muito lenta.
 */
 
 // to be continued...
