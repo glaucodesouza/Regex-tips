@@ -6,3 +6,5 @@ professor Eduardo Leitão - UDEMY
 
 -Nodejs
 -extensão Code Runner (Jon Hun)
+
+or execute node nome-do-script.js
