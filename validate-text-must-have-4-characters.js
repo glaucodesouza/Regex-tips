@@ -7,6 +7,8 @@ to test your code in VS Code terminal
 */
 let text = `DD99`;
 let isValid = text.match(/^[a-zA-Z0-9]{4}$/);
+console.log(isValid);
+
 /*results
 isValid=true
 */
